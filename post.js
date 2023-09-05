@@ -33,6 +33,10 @@ document.getElementById('datauser').addEventListener('submit', function (event) 
         })
         .then(data => {
             console.log("Nuevo usuario creado", data);
+            alert("¡La solicitud se realizó correctamente!");
+            document.getElementById('fname').value = '';
+            document.getElementById('lname').value = '';
+            document.getElementById('bday').value = '2011-11-22';
         })
         .catch(error => {
             console.error("Error", error);
